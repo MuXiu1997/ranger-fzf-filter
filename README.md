@@ -1,6 +1,7 @@
 # ranger-fzf-filter
 This is a plugin for [`ranger`](https://github.com/ranger/ranger) that add a fuzzy filter.  It depends on [`fzf`](https://github.com/junegunn/fzf)
 
+https://user-images.githubusercontent.com/49554020/173509108-dc3edca4-8949-4026-a3ca-0ba8dac9bbce.mp4
 
 
 ## Install
