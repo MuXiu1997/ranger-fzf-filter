@@ -8,7 +8,7 @@ class fzf_filter(ranger.api.commands.Command):
     :fzf_filter <query>
 
     Flags:
-    -r   Filter through all subfolders recursively
+    -r   filter through all files recursively by unfolding all subfolders
 
     Filter with fzf
     """

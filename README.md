@@ -28,6 +28,7 @@ wget -O ~/.config/ranger/plugins/ranger_fzf_filter.py https://raw.githubusercont
 Command:
 
 - `:fzf_filter [query]`: filtering files with fzf, see this [search syntax](https://github.com/junegunn/fzf#search-syntax)
+- `:fzf_filter -r [query]`: filter through all files recursively by unfolding all subfolders
 
 
 
@@ -37,6 +38,7 @@ Add a binding to your `~/.config/ranger/rc.conf` file to quickly use `:fzf_filte
 
 ```
 map f console fzf_filter%space
+map F console fzf_filter%space-r%space
 ```
 
 
