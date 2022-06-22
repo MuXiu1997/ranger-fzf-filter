@@ -16,6 +16,4 @@ class FzfFilter:
         self.result = stdout.decode('utf-8').strip().splitlines()
 
     def __call__(self, fobj):
-        if os.path.dirname(fobj.path) != self.directory:
-            return True
-        return fobj.basename in self.result
+        return fobj.relative_path in self.result
