@@ -1,5 +1,6 @@
 import ranger.api
 import ranger.container.directory
+# noinspection PyUnresolvedReferences
 from .command import fzf_filter
 
 # region overwrite hook_init
@@ -12,7 +13,7 @@ def hook_init(fm):
             signal.previous.__dict__['fzf_filter'] = None
             signal.previous.refilter()
 
-    fm.signal_bind("cd", clear_fzf_filter)
+    fm.signal_bind('cd', clear_fzf_filter)
     return HOOK_INIT_OLD(fm)
 
 
