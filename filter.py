@@ -1,3 +1,4 @@
+import os.path
 import subprocess
 
 
@@ -34,8 +35,12 @@ class FzfFilter:
 
     def __call__(self, fobj):
         # Check if the files in the current directory have changed, and recalculate source and result if needed
-        if self.thisdir.files_all != self.files_all:
+        if self.thisdir.files_all is not self.files_all:
+            self.files_all = self.thisdir.files_all
             self.recalc_source()
             self.recalc_result()
+
+        if os.path.relpath(fobj.path, fobj.relative_path) != '.':
+            return True
 
         return fobj.relative_path in self.result
