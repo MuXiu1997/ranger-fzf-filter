@@ -1,5 +1,8 @@
 # ranger-fzf-filter
-This is a plugin for [`ranger`](https://github.com/ranger/ranger) that add a fuzzy filter.  It depends on [`fzf`](https://github.com/junegunn/fzf)
+This is a [`ranger`](https://github.com/ranger/ranger) plugin that adds a fuzzy filter(depends on [`fzf`](https://github.com/junegunn/fzf)), allowing for the interactive real-time display of filtered files. Unlike the built-in `find` command, which requires pressing `Enter` to execute and display filtered files, this plugin shows them instantaneously.(Translated by ChatGPT)
+
+这是一个 [`ranger`](https://github.com/ranger/ranger) 插件，添加了一个模糊过滤器（依赖 [`fzf`](https://github.com/junegunn/fzf)），可以交互式实时过滤出显示的文件，而不是像内置的`find`命令需要输入回车执行后才过滤出显示的文件。
+
 
 https://user-images.githubusercontent.com/49554020/173509108-dc3edca4-8949-4026-a3ca-0ba8dac9bbce.mp4
 
@@ -44,4 +47,5 @@ map f console fzf_filter%space
 ## License
 
 [MIT](LICENSE)
+
 
